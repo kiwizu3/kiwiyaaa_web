@@ -16,3 +16,26 @@
 .margin-10{
     margin: 10px 10px 10px 10px;
 }
+
+.margin-5{
+    margin: 5px 0px 0px 0px ;
+}
+
+/* Paddings */
+
+.padding-5{
+    padding: 5px 5px 5px 5px;
+}
+
+
+.card{
+    background: #fff;
+}
+
+
+/* icons */
+
+.icon-x{
+    width:10%; 
+    margin-top:-10px;
+}

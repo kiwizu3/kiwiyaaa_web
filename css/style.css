@@ -2256,8 +2256,8 @@ input[type="submit"].form-control:focus {
   border-radius: 2px;
   font-family: "Poppins", "Droid Arabic Kufi", sans-serif;
   text-transform: uppercase;
-  color: #ff3f3f;
-  background-color: rgba(255, 63, 63, 0.1);
+  color: #208BF7;
+  background-color: #A57B521a;
 }
 
 /* Banner Center Box */
