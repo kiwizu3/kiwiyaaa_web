@@ -1,0 +1,18 @@
+/* Shadows */
+.shadow {
+    box-shadow: 2px 2px 10px #21212118;
+}
+
+
+/* ALignment  */
+
+.mx-auto {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Margins */
+
+.margin-10{
+    margin: 10px 10px 10px 10px;
+}
