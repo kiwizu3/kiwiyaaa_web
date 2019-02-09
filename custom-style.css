@@ -13,6 +13,10 @@
 
 /* Margins */
 
+.margin-top-3{
+    margin-top: 3%;
+}
+
 .margin-10{
     margin: 10px 10px 10px 10px;
 }
