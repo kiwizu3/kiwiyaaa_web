@@ -307,20 +307,21 @@ img{
         z-index: var(--z-back);
     }
     &__html{
+        width: 91%;
+      }
+      &__css{
         width: 95%;
-    }
-    &__css{
-        width: 85%;
-    }
-    &__js{
-        width: 65%;
-    }
-    &__ux{
-        width: 85%;
-    }
-    &__img{
-        border-radius: .5rem;
-    }
+      }
+      &__js{
+        width: 90%;
+      }
+      &__dart{
+        width: 38%;
+      }
+      &__php{
+        width: 81%;
+      }
+      
 }
 /* ===== WORK =====*/
 .work{
