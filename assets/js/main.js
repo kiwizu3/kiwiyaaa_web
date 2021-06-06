@@ -59,3 +59,43 @@ sr.reveal('.contact__input',{interval: 200});
 
 
 
+window.count = function (arr) {
+    return arr.reduce((prev, curr) => (prev[curr] = ++prev[curr] || 1, prev), {})
+}
+
+window.ghApiCallHandler = function (result) {
+
+    if (Math.floor(result.meta.status / 100) == 2) {
+        var repos;
+        var languages = [];
+        for (repos = 0; repos < 100; repos++) {
+            if (result.data[repos].language !== null) {
+                languages.push(result.data[repos].language);
+
+            }
+        }
+        // console.log("array", _.countBy(languages))
+        var languages_kiwi = count(languages);
+        // console.log(languages_kiwi)
+        var total = languages_kiwi.JavaScript + languages_kiwi.CSS + languages_kiwi.HTML + languages_kiwi.Dart + languages_kiwi.PHP + languages_kiwi.Hack;
+        document.getElementById('JS').innerHTML = (((languages_kiwi.JavaScript + 30) / total) * 100).toFixed(0) + '%';
+        document.getElementById('HTML').innerHTML = (((languages_kiwi.HTML + 33) / total) * 100).toFixed(0) + '%';
+        document.getElementById('CSS').innerHTML = (((languages_kiwi.CSS + 43) / total) * 100).toFixed(0) + '%';
+        document.getElementById('Dart').innerHTML = (((languages_kiwi.Dart + 21) / total) * 100).toFixed(0) + '%';
+        document.getElementById('PHP').innerHTML = (((languages_kiwi.PHP + 45) / total) * 100).toFixed(0) + '%';
+    }
+
+
+    else
+        alert('Request failed with code ' + result.meta.status);
+};
+
+window.ghApiCall = function (user) {
+    var scrElm = document.createElement('script');
+    scrElm.src = 'https://api.github.com/users/' + encodeURI(user) + '/repos?callback=ghApiCallHandler&per_page=100';
+    (document.head || document.getElementsByTagName('head')[0]).appendChild(scrElm);
+};
+
+ghApiCall('kiwizu3');
+
+

@@ -172,22 +172,22 @@
             <h2 class="section-title">Work</h2>
 
             <div class="work__container bd-grid">
-                <div class="work__img" id="myBtn">
+                <div class="work__img" id="btn1">
                     <img src="assets/img/work1.jpg" alt="">
                 </div>
-                <div class="work__img" id="myBtn">
+                <div class="work__img" id="btn2">
                     <img src="assets/img/work2.jpg" alt="">
                 </div>
-                <div class="work__img" id="myBtn2">
+                <div class="work__img" id="btn3">
                     <img src="assets/img/work3.jpg" alt="">
                 </div>
-                <div class="work__img">
+                <div class="work__img" id="btn4">
                     <img src="assets/img/work4.jpg" alt="">
                 </div>
-                <div class="work__img">
+                <div class="work__img" id="btn5">
                     <img src="assets/img/work5.jpg" alt="">
                 </div>
-                <div class="work__img">
+                <div class="work__img" id="btn6">
                     <img src="assets/img/work6.jpg" alt="">
                 </div>
             </div>
@@ -224,98 +224,207 @@
 
 
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-        <!-- Modal content -->
+    <div id="modal1" class="modal">
         <div class="modal-content">
             <div class="modal__header">
-                <span class="close">&times;</span>
+                <!-- <span class="close">&times;</span> -->
             </div>
-            <p>Some text in the Modal..</p>
+            <div class="video-container">
+                <video id="video1" width="100%" controls>
+                    <source src="assets/videos/1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
-
     </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="modal__header">
+                <!-- <span class="close">&times;</span> -->
+            </div>
+            <div class="video-container">
+                <video id="video2" width="100%" controls>
+                    <source src="assets/videos/2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="modal__header">
+                <!-- <span class="close">&times;</span> -->
+            </div>
+            <div class="video-container">
+                <video id="video3" width="100%" controls>
+                    <source src="assets/videos/3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <div class="modal__header">
+                <!-- <span class="close">&times;</span> -->
+            </div>
+            <div class="video-container">
+                <video id="video4" width="100%" controls>
+                    <source src="assets/videos/4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <div class="modal__header">
+                <!-- <span class="close">&times;</span> -->
+            </div>
+            <div class="video-container">
+                <video id="video5" width="100%" controls>
+                    <source src="assets/videos/5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <div class="modal__header">
+                <!-- <span class="close">&times;</span> -->
+            </div>
+            <div class="video-container">
+                <video id="video6" width="100%" controls>
+                    <source src="assets/videos/6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
 
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <script>
-
-
-
-
-        window.count = function (arr) {
-            return arr.reduce((prev, curr) => (prev[curr] = ++prev[curr] || 1, prev), {})
-        }
-
-        window.ghApiCallHandler = function (result) {
-
-            if (Math.floor(result.meta.status / 100) == 2) {
-                var repos;
-                var languages = [];
-                for (repos = 0; repos < 100; repos++) {
-                    if (result.data[repos].language !== null) {
-                        languages.push(result.data[repos].language);
-
-                    }
-                }
-                // console.log("array", _.countBy(languages))
-                var languages_kiwi = count(languages);
-                console.log(languages_kiwi)
-                var total = languages_kiwi.JavaScript + languages_kiwi.CSS + languages_kiwi.HTML + languages_kiwi.Dart + languages_kiwi.PHP + languages_kiwi.Hack;
-                document.getElementById('JS').innerHTML = (((languages_kiwi.JavaScript + 30) / total) * 100).toFixed(0) + '%';
-                document.getElementById('HTML').innerHTML = (((languages_kiwi.HTML + 33) / total) * 100).toFixed(0) + '%';
-                document.getElementById('CSS').innerHTML = (((languages_kiwi.CSS + 43) / total) * 100).toFixed(0) + '%';
-                document.getElementById('Dart').innerHTML = (((languages_kiwi.Dart + 21) / total) * 100).toFixed(0) + '%';
-                document.getElementById('PHP').innerHTML = (((languages_kiwi.PHP + 45) / total) * 100).toFixed(0) + '%';
-            }
-
-
-            else
-                alert('Request failed with code ' + result.meta.status);
-        };
-
-        window.ghApiCall = function (user) {
-            var scrElm = document.createElement('script');
-            scrElm.src = 'https://api.github.com/users/' + encodeURI(user) + '/repos?callback=ghApiCallHandler&per_page=100';
-            (document.head || document.getElementsByTagName('head')[0]).appendChild(scrElm);
-        };
-
-        ghApiCall('kiwizu3');
-    </script>
-
 
     <script>
         // Get the modal
-        var modal = document.getElementById("myModal");
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
+        var modal1 = document.getElementById("modal1");
+        var video1 = document.getElementById("video1");
+        var btn1 = document.getElementById("btn1");
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+        var modal2 = document.getElementById("modal2");
+        var video2 = document.getElementById("video2");
+        var btn2 = document.getElementById("btn2");
 
-        var btn2 = document.getElementById("myBtn2");
-        
-        console.log("btn", btn.id, btn2.id)
-        
-        // When the user clicks the button, open the modal 
-        btn.onclick = function () {
-            modal.style.display = "block";
+        var modal3 = document.getElementById("modal3");
+        var video3 = document.getElementById("video3");
+        var btn3 = document.getElementById("btn3");
+
+        var modal4 = document.getElementById("modal4");
+        var video4 = document.getElementById("video4");
+        var btn4 = document.getElementById("btn4");
+
+        var modal5 = document.getElementById("modal5");
+        var video5 = document.getElementById("video5");
+        var btn5 = document.getElementById("btn5");
+
+        var modal6 = document.getElementById("modal6");
+        var video6 = document.getElementById("video6");
+        var btn6 = document.getElementById("btn6");
+
+
+        // var span = document.getElementsByClassName("close")[0];
+
+
+        btn1.onclick = function () {
+            modal1.style.display = "block";
+            video1.play();
+        }
+        btn2.onclick = function () {
+            modal2.style.display = "block";
+            video2.play();
+        }
+        btn3.onclick = function () {
+            modal3.style.display = "block";
+            video3.play();
+        }
+        btn4.onclick = function () {
+            modal4.style.display = "block";
+            video4.play();
+        }
+        btn5.onclick = function () {
+            modal5.style.display = "block";
+            video5.play();
+        }
+        btn6.onclick = function () {
+            modal6.style.display = "block";
+            video6.play();
         }
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
+        // span.onclick = function () {
+        //     modal1.style.display = "none";
+        //     video1.pause();
+        //     video1.currentTime = 0;
+        //     modal2.style.display = "none";
+        //     video2.pause();
+        //     video2.currentTime = 0;
+        //     modal3.style.display = "none";
+        //     video3.pause();
+        //     video3.currentTime = 0;
+        //     modal4.style.display = "none";
+        //     video4.pause();
+        //     video4.currentTime = 0;
+        //     modal5.style.display = "none";
+        //     video5.pause();
+        //     video5.currentTime = 0;
+        //     modal6.style.display = "none";
+        //     video6.pause();
+        //     video6.currentTime = 0;
 
-        // When the user clicks anywhere outside of the modal, close it
+        // }
+
         window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+                video1.pause();
+                video1currentTime = 0;
+            }
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+                video2.pause();
+                video2.currentTime = 0;
+            }
+            if (event.target == modal3) {
+                modal3.style.display = "none";
+                video3.pause();
+                video3.currentTime = 0;
+            }
+            if (event.target == modal4) {
+                modal4.style.display = "none";
+                video4.pause();
+                video4.currentTime = 0;
+            }
+            if (event.target == modal5) {
+                modal5.style.display = "none";
+                video5.pause();
+                video5.currentTime = 0;
+            }
+            if (event.target == modal6) {
+                modal6.style.display = "none";
+                video6.pause();
+                video6.currentTime = 0;
             }
         }
+
     </script>
 
 
