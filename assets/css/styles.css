@@ -1254,3 +1254,8 @@ img{
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.send__button{
+    border: 0 !important;
+    font-weight: var(--font-medium);
+}
