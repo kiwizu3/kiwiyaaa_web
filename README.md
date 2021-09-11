@@ -1,5 +1,11 @@
-# Kiwiyaaa.xyz
-## [Watch my latest work on Facebook](https://fb.watch/5OJQ0oFySN/)
+# My Portfolio Website
 
-Don't forget to like the fb page.
-[Bedimcode](https://www.fb.com/kiwiyaaaa)
+You can get all the features and their relevant codes in relavant branches. Feel free to edit them according to your choice with proper credits.
+
+For any queries- rajuahmad6789@gmail.com 
+
+
+
+`credits-bedimcode`
+
+
