@@ -849,6 +849,23 @@
         const date = new Date().getDate();
         document.getElementById("demo").innerHTML = date;
     </script>
+    
+   
+    <script>
+      (function(d,t) {
+        var BASE_URL="https://helpdesk.shoutout.ai";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'Jn2QoRt1F9CwnnZ6TbjAoXQ4',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
+    
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
 
