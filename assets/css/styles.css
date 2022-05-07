@@ -3,7 +3,7 @@
 
 /*==================== VARIABLES CSS ====================*/
 :root {
-    --header-height: 3rem;
+    --header-height: 4rem;
 
     /*========== Colors ==========*/
     /* Change favorite color */
@@ -264,7 +264,7 @@ img{
 }
 
 /* Active link */
-.active-link{
+.active-link-alt{
     color: var(--first-color);
 }
 
@@ -407,6 +407,19 @@ img{
 .button--link:hover{
     background-color: transparent;
     color: var(--first-color-alt);
+}
+
+
+.button--ghost {
+    background-color: transparent;
+    border: 2px solid var(--first-color);
+    color: var(--first-color);
+}
+
+
+.button--ghost:hover{
+    background-color: var(--first-color);
+    color: #FFF;
 }
 
 /*==================== ABOUT ====================*/
