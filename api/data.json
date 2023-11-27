@@ -1,58 +1,59 @@
-{
-    published: true,
-    title: 'Flappy Frenzy',
-    description: 'HTML5 Flappy Bird Variant',
-    date: '2023-05-21T00:00:00.000Z',
-    repository: 'kiwizu3/kiwi-bird-game',
-    body: "somthing",
-    _id: 'projects/zod-bird.mdx',
-    _raw: {
-      sourceFilePath: 'projects/zod-bird.mdx',
-      sourceFileName: 'zod-bird.mdx',
-      sourceFileDir: 'projects',
-      contentType: 'mdx',
-      flattenedPath: 'projects/zod-bird'
+[
+  {
+    "published": true,
+    "title": "Flappy Frenzy",
+    "description": "HTML5 Flappy Bird Variant",
+    "date": "2023-05-21T00:00:00.000Z",
+    "repository": "kiwizu3/kiwi-bird-game",
+    "body": "something",
+    "_id": "projects/zod-bird.mdx",
+    "_raw": {
+      "sourceFilePath": "projects/zod-bird.mdx",
+      "sourceFileName": "zod-bird.mdx",
+      "sourceFileDir": "projects",
+      "contentType": "mdx",
+      "flattenedPath": "projects/zod-bird"
     },
-    type: 'Project',
-    path: '/projects/bird-game',
-    slug: 'bird-game'
+    "type": "Project",
+    "path": "/projects/bird-game",
+    "slug": "bird-game"
   },
   {
-    published: true,
-    title: 'Match Pairs',
-    description: 'HTML5 Game to match pairs',
-    date: '2023-05-21T00:00:00.000Z',
-    repository: 'kiwizu3/kiwi-match-pairs',
-    body: "somthing",
-    _id: 'projects/zod-bird.mdx',
-    _raw: {
-      sourceFilePath: 'projects/zod-bird.mdx',
-      sourceFileName: 'zod-bird.mdx',
-      sourceFileDir: 'projects',
-      contentType: 'mdx',
-      flattenedPath: 'projects/zod-bird'
+    "published": true,
+    "title": "Match Pairs",
+    "description": "HTML5 Game to match pairs",
+    "date": "2023-05-21T00:00:00.000Z",
+    "repository": "kiwizu3/kiwi-match-pairs",
+    "body": "something",
+    "_id": "projects/zod-bird.mdx",
+    "_raw": {
+      "sourceFilePath": "projects/zod-bird.mdx",
+      "sourceFileName": "zod-bird.mdx",
+      "sourceFileDir": "projects",
+      "contentType": "mdx",
+      "flattenedPath": "projects/zod-bird"
     },
-    type: 'Project',
-    path: '/projects/match-pairs',
-    slug: 'match-pairs'
+    "type": "Project",
+    "path": "/projects/match-pairs",
+    "slug": "match-pairs"
   },
   {
-    published: true,
-    title: 'Snake Game',
-    description: 'Classic Snake Game built with HTML5',
-    date: '2023-05-21T00:00:00.000Z',
-    repository: 'kiwizu3/kiwi-snake-game',
-    body: "somthing",
-    _id: 'projects/zod-bird.mdx',
-    _raw: {
-      sourceFilePath: 'projects/zod-bird.mdx',
-      sourceFileName: 'zod-bird.mdx',
-      sourceFileDir: 'projects',
-      contentType: 'mdx',
-      flattenedPath: 'projects/zod-bird'
+    "published": true,
+    "title": "Snake Game",
+    "description": "Classic Snake Game built with HTML5",
+    "date": "2023-05-21T00:00:00.000Z",
+    "repository": "kiwizu3/kiwi-snake-game",
+    "body": "something",
+    "_id": "projects/zod-bird.mdx",
+    "_raw": {
+      "sourceFilePath": "projects/zod-bird.mdx",
+      "sourceFileName": "zod-bird.mdx",
+      "sourceFileDir": "projects",
+      "contentType": "mdx",
+      "flattenedPath": "projects/zod-bird"
     },
-    type: 'Project',
-    path: '/projects/snake-game',
-    slug: 'snake-game'
+    "type": "Project",
+    "path": "/projects/snake-game",
+    "slug": "snake-game"
   }
-
+]
