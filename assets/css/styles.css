@@ -1281,6 +1281,10 @@ img{
     font-weight: 800;
 }
 
+.nav-logo{
+    width: 7.5rem;
+}
+
 .footer-logo{
     width: 12rem;
 }
