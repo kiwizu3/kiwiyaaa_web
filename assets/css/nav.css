@@ -1,8 +1,8 @@
 :root {
-    --first-hue: 207;
+    --first-hue: 340;
     --sat: 90%;
     --lig: 75%;
-    --second-hue: 219;
+    --second-hue: 330;
     --nav-bg : hsla(var(--second-hue), 32%, 90%, .8);
 
 }

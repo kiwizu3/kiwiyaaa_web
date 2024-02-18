@@ -1,5 +1,5 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -361,8 +361,9 @@ img{
     display: inline-block;
     background-color: var(--first-color);
     color: #FFF;
-    padding: 0.5rem;
-    border-radius: .5rem;
+    padding: 0.5rem 1rem;
+    line-height: 1.2;
+    border-radius: 2rem;
     font-weight: var(--font-medium);
 }
 
@@ -1272,4 +1273,14 @@ img{
 .send__button{
     border: 0 !important;
     font-weight: var(--font-medium);
+}
+
+
+.kavinda-logo{
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.footer-logo{
+    width: 12rem;
 }
